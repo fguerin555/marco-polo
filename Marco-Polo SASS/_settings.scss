@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "source-sans-pro";
+  src: url(./assets/styles/fonts/source-sans-pro.light.ttf);
+}
+@font-face {
+  font-family: "source-sans-pro-reg";
+  src: url(./assets/styles/fonts/source-sans-pro.regular.ttf);
+}
+
+$v-color1: rgba(223, 235, 238, 0.398);
+$v-color2: rgb(16, 107, 167);
+$v-color3: skyblue;
+$v-color4: white;
+$v-color5: #ccc;
+$v-color6: rgba(209, 220, 222, 0.168);
+$v-color7: rgb(221, 230, 232);
+$v-color8: rgb(7, 103, 143);
+$v-color9: #358ac7;
+$v-color10: rgb(165, 64, 6);
+$v-colboxshadow: rgba(156, 214, 235, 0.709);
+
+$v-font1: "source-sans-pro", serif;
+$v-font2: "source-sans-pro-reg", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  background: $v-color1;
+}
+
+@mixin logo-menu {
+  .logo img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    background: transparent;
+  }
+
+  nav {
+    margin-bottom: 30px;
+    max-width: 100vh;
+    margin: auto;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: $v-color2;
+  }
+
+  li {
+    font-family: $v-font1, serif;
+    font-size: 2rem;
+    font-style: normal;
+    color: $v-color2;
+  }
+
+  nav ul li:hover {
+    background: $v-color4;
+    border: 1px solid $v-color3;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+}
+
+.page5 li {
+  margin-bottom: 8px;
+}

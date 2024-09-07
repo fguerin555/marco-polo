@@ -1,0 +1,283 @@
+body {
+  background: $v-color1;
+  @include logo-menu;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: $v-color2;
+  font-family: $v-font2;
+  font-size: 2.5rem;
+}
+.place {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  color: $v-color2;
+}
+span {
+  color: $v-color6;
+}
+.container1 {
+  input {
+    &::placeholder {
+      color: $v-color2;
+      font-size: 1rem;
+    }
+  }
+}
+#row {
+  font-family: $v-font2;
+  font-size: 0.9rem;
+  color: $v-color2;
+  border-radius: 5px;
+  border: 1px solid $v-color5;
+  padding: 2px;
+  &:hover {
+    border: 2px solid $v-color3;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 20px;
+  width: 85%;
+  margin: 30px auto;
+  max-width: 600px;
+
+  input {
+    border-radius: 5px;
+    border: 1px solid $v-color5;
+    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    &:hover {
+      border: 2px solid $v-color3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+
+  .checkin {
+    display: block;
+    color: $v-color2;
+    font-size: 1.3rem;
+  }
+  .checkin-text {
+    font-family: $v-font2;
+    font-size: 1rem;
+    color: $v-color2;
+    margin-top: 20px;
+    margin-left: 18vh;
+  }
+  .checkout {
+    display: block;
+    color: $v-color2;
+    font-size: 1.3rem;
+  }
+
+  .checkout-text {
+    font-family: $v-font2;
+    font-size: 1rem;
+    color: $v-color2;
+    margin-top: 20px;
+    margin-left: 18vh;
+  }
+
+  input[type="date"] {
+    font-family: $v-font1;
+    cursor: pointer;
+    margin-top: 10px;
+    color: $v-color2;
+    font-size: 1rem;
+  }
+  input[type="date"]:hover {
+    border: 2px solid $v-color3;
+    transition: 0.3s;
+  }
+}
+
+.valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.please h2 {
+  display: flex;
+  // color: $v-color3;
+  color: transparent;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit {
+  border-radius: 15px;
+  border: 2px solid $v-color9;
+  padding: 15px;
+  color: $v-color8;
+  font-size: 0.8rem;
+  background: $v-color7;
+  margin-top: 46px;
+  font-family: $v-font1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 2px solid $v-color3;
+    color: $v-color3;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &:visited {
+    .please h2 {
+      color: red;
+    }
+  }
+}
+
+.pay h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  color: $v-color2;
+  font-family: $v-font2;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  max-width: 80vh;
+  margin: auto;
+}
+img {
+  align-items: center;
+  margin-top: 30px;
+  height: 60px;
+  width: 64px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  &:hover {
+    border: 2px solid $v-color3;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid $v-color3;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+footer {
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 1.2rem;
+    color: $v-color3;
+    margin-top: 35px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      background: $v-color1;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -20px;
+    }
+  }
+}
+.socials {
+  ul {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+//****RESPONSIVE smartphone*****************//
+
+@media screen and (max-width: 600px) {
+  .form-grid {
+    display: block;
+  }
+  .form-grid input {
+    padding: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+  }
+  .checkin-text p {
+    font-size: 1rem;
+  }
+
+  .checkout-text p {
+    font-size: 1rem;
+  }
+
+  .please h2 {
+    font-size: 1rem;
+  }
+
+  .pay {
+    font-size: 0.7rem;
+  }
+
+  .cards {
+    display: block;
+    width: 100%;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .checkin-text p {
+    font-size: 0.9rem;
+  }
+
+  .checkout-text p {
+    font-size: 0.9rem;
+  }
+}

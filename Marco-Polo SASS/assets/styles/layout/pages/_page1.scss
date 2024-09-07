@@ -1,0 +1,24 @@
+body {
+  .page1 {
+    background: $v-color1;
+    height: 100vh;
+    @include logo-menu;
+  }
+  .class-container .mp1,
+  .mp2,
+  .mp3,
+  .mp4,
+  .mp5 {
+    height: 700px;
+    width: 1200px;
+    max-width: 90%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,92 @@
+body {
+  .page3 {
+    background: $v-color1;
+    @include logo-menu;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 30px auto;
+    color: $v-color2;
+    font-family: $v-font1;
+    font-size: 2.5rem;
+  }
+  textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    resize: none;
+    border: 1px solid $v-color3;
+    border-radius: 20px;
+    font-family: $v-font1, serif;
+    font-size: 1.3rem;
+    text-align: left;
+    color: $v-color2;
+    padding: 12px 20px;
+    &::placeholder {
+      color: $v-color2;
+      font-size: 1.5rem;
+      margin: 0 auto;
+    }
+    &:hover {
+      border: solid 2px $v-color3;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  form {
+    input[type="submit"] {
+      display: flex;
+      margin: 5px auto 50px auto;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border: solid 1px $v-color3;
+      color: $v-color2;
+      background: white;
+      border-radius: 10px;
+    }
+    input[type="submit"]:hover {
+      border: solid 2px $v-color3;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    display: flex;
+    margin-top: 20px;
+    margin: 15px auto;
+    width: 80%;
+    color: $v-color2;
+  }
+  .adress {
+    p {
+      display: block;
+      width: 80%;
+      margin: 30px auto;
+      font-size: 1.4rem;
+      color: $v-color2;
+
+      font-family: $v-font1;
+    }
+  }
+  .map {
+    iframe {
+      display: flex;
+      width: 90%;
+      height: 450px;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid $v-color3;
+      border-radius: 20px;
+    }
+  }
+}

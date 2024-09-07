@@ -1,0 +1,277 @@
+body {
+  .prices-ls {
+    border: 1px solid $v-color8;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 15px;
+    background: $v-color1;
+  }
+  .prices-ls h3 {
+    display: flex;
+    font-family: $v-font2;
+    color: $v-color8;
+    font-size: 1.8rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 3px auto 5px auto;
+  }
+  .prices-ls h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $v-font1;
+    font-style: italic;
+    color: $v-color2;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .prices-ls ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .prices-ls li {
+    font-size: 1.5rem;
+    font-family: $v-font2;
+  }
+
+  @media screen and (max-width: 550px) {
+    .prices-ls h3 {
+      font-size: 1.2rem;
+    }
+    .prices-ls h4 {
+      font-size: 0.9rem;
+    }
+    .prices-ls ol li {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .prices-ls h3 {
+      font-size: 1.2rem;
+    }
+    .prices-ls ol li {
+      font-size: 1rem;
+    }
+  }
+  .prices-ts {
+    border: 1px solid $v-color8;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 15px;
+    background: $v-color1;
+  }
+  .prices-ts h3 {
+    display: flex;
+    font-family: $v-font2;
+    color: $v-color8;
+    font-size: 1.8rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 3px auto 5px auto;
+  }
+  .prices-ts h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $v-font1;
+    font-style: italic;
+    color: $v-color2;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .prices-ts ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .prices-ts li {
+    font-size: 1.5rem;
+    font-family: $v-font2;
+  }
+  .prices-ps {
+    border: 1px solid $v-color8;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background: $v-color1;
+  }
+  .prices-ps h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $v-font2;
+    color: $v-color8;
+    font-size: 1.8rem;
+    margin: 3px auto 5px auto;
+  }
+
+  .prices-ps h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $v-font1;
+    font-style: italic;
+    color: $v-color2;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .prices-ps ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .prices-ps li {
+    font-size: 1.5rem;
+    font-family: $v-font2;
+  }
+  @media screen and (max-width: 550px) {
+    .prices-ts h3 {
+      font-size: 1.2rem;
+    }
+    .prices-ts h4 {
+      font-size: 0.9rem;
+    }
+    .prices-ts ol li {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .prices-ps h3 {
+      font-size: 1.2rem;
+    }
+    .prices-ps h4 {
+      font-size: 0.9rem;
+    }
+    .prices-ps ol li {
+      font-size: 1rem;
+    }
+  }
+
+  .location {
+    display: grid;
+    grid-template-columns: 40vh 60vh;
+    color: $v-color2;
+    font-family: $v-font1;
+
+    font-size: 0.7rem;
+    height: 38px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  @media screen and (max-width: 400px) {
+    .location {
+      grid-template-columns: 38vh 62vh;
+    }
+  }
+  @media screen and (max-width: 368px) {
+    .location {
+      grid-template-columns: 34vh 66vh;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    nav li {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 356px) {
+    nav li {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    nav li {
+      font-size: 1rem;
+    }
+  }
+
+  .beach-container {
+    display: grid;
+    grid-template-columns: 45vh 55vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    background: rgb(247, 236, 207);
+    background: rgb(144, 218, 238);
+    grid-template-areas: "lef rig";
+
+    @media screen and (max-width: 500px) {
+      grid-template-columns: 45vh 55vh;
+    }
+
+    @media screen and (max-width: 400px) {
+      grid-template-columns: 42vh 68vh;
+    }
+  }
+}
+.left {
+  grid-area: lef;
+  background: rgb(247, 236, 207);
+}
+
+.right {
+  grid-area: rig;
+  background: rgb(144, 218, 238);
+}
+
+.beach-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  min-width: 5vh;
+  column-gap: 50px;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  justify-items: center;
+}
+
+.loc li {
+  font-size: 1rem;
+  border: 1px solid $v-color2;
+  border-radius: 60%;
+  padding: 10px;
+  background: $v-color3;
+  color: $v-color8;
+}
+
+.letter li {
+  font-family: $v-font2;
+  font-style: bold;
+  color: $v-color2;
+  margin-left: 1vh;
+}
+
+.title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $v-color2;
+  color: $v-color2;
+  font-family: $v-font1;
+  margin-top: 20px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.prices h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.prices p {
+  margin-left: 15rem;
+}

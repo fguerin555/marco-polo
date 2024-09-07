@@ -1,0 +1,25 @@
+body {
+  .page4 {
+    background: $v-color1;
+    header {
+      @include logo-menu;
+    }
+
+    section-menu {
+      ul {
+        li {
+          margin-top: 20px;
+        }
+      }
+      img {
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin: 5px auto;
+        border: 1px solid $v-color2;
+        border-radius: 10px;
+        box-shadow: 8px 5px 8px $v-colboxshadow;
+      }
+    }
+  }
+}
